@@ -1,4 +1,5 @@
 import java.security.SecureRandom;
+import java.util.Scanner;
 
 public class Main {
 
@@ -17,7 +18,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int passwordLength = 12;
+        Scanner scanner = new Scanner(System.in); // Create a keyboard reader scan
+        System.out.println("Type your new password's length: ");
+        int passwordLength = scanner.nextInt(); // Read the typed length
+
         String password = generatePassword(passwordLength);
         System.out.println("Password generated: " + password);
     }

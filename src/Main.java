@@ -22,6 +22,10 @@ public class Main {
         System.out.println("Type your new password's length: ");
         int passwordLength = scanner.nextInt(); // Read the typed length
 
+        if (passwordLength < 8) {
+            System.out.println("Very short password! Minimum 8 characters.");
+            return;
+        }
         String password = generatePassword(passwordLength);
         System.out.println("Password generated: " + password);
     }

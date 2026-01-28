@@ -17,6 +17,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        
+        int passwordLength = 12;
+        String password = generatePassword(passwordLength);
+        System.out.println("Password generated: " + password);
     }
 }

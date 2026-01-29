@@ -1,7 +1,6 @@
 import java.security.SecureRandom;
 import java.util.Scanner;
 
-
 public class Main {
 
     private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*()_+-=[]|,./?><";
